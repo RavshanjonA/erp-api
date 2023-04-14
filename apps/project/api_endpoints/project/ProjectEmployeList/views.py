@@ -8,4 +8,3 @@ from apps.project.models import Project
 class ProjectEmployesList(RetrieveAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectEmployeeSerializer
-

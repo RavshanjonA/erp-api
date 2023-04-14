@@ -1,4 +1,4 @@
-from rest_framework.generics import ListAPIView, CreateAPIView
+from rest_framework.generics import  CreateAPIView
 
 from apps.employee.api_endpoints.employee.EmployeeCreate.serializers import EmployeeCreateSerializer
 from apps.employee.models import Employee

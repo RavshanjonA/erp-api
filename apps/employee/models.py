@@ -11,3 +11,4 @@ class Employee(TimeStampedModel):
     salary = DecimalField(decimal_places=2, max_digits=15, default=0)
     start_work = TimeField()
     end_work = TimeField()
+

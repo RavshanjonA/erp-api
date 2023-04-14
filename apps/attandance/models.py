@@ -1,3 +1,6 @@
-from django.db import models
+from django.db.models import Model, ForeignKey, CASCADE, DateTimeField
 
-# Create your models here.
+
+class Attandance(Model):
+    user = ForeignKey('employee.Employee', CASCADE, 'attandanes')
+    start_work = DateTimeField()

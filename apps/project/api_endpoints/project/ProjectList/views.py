@@ -7,4 +7,3 @@ from apps.project.models import Project
 class ProjectListView(ListAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectListSerializer
-

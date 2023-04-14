@@ -1,6 +1,6 @@
 from rest_framework.generics import RetrieveAPIView
 
-from apps.project.api_endpoints.project.ProjectDetial.serializers import ProjectDetailSerializer
+from apps.project.api_endpoints.project.ProjectDetail.serializers import ProjectDetailSerializer
 from apps.project.models import Project
 
 

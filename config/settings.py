@@ -30,7 +30,7 @@ CUSTOM_APPS = [
     'apps.internship.apps.InternshipConfig',
     'apps.employee.apps.EmployeeConfig',
     'apps.project.apps.ProjectConfig',
-
+    'apps.event.apps.EventConfig'
 ]
 
 THIRD_PARTY_APPS = [

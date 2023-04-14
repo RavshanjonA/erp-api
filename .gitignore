@@ -12,6 +12,8 @@
 
 static/
 
+trash/
+
 db.sqlite3
 
 # AWS User-specific
