@@ -11,3 +11,6 @@ class Internship(TimeStampedModel):
 
     class Meta:
         db_table = 'internship'
+
+    def __str__(self):
+        return self.name

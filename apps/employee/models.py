@@ -17,3 +17,6 @@ class Employee(TimeStampedModel):
 
     class Meta:
         db_table = 'employee'
+
+    def __str__(self):
+        return "{} {}".format(self.first_name, self.last_name)

@@ -13,3 +13,5 @@ class Event(TimeStampedModel):
     class Meta:
         db_table = 'event'
 
+    def __str__(self):
+        return self.name

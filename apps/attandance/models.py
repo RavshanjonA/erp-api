@@ -7,3 +7,6 @@ class Attandance(Model):
 
     class Meta:
         db_table = 'attandance'
+
+    def __str__(self):
+        self.employee.first_name

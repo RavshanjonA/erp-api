@@ -11,6 +11,9 @@ class Inventory(TimeStampedModel):
     class Meta:
         db_table = 'invetory'
 
+    def __str__(self):
+        return self.name
+
 
 class Product(TimeStampedModel):
     name = CharField(max_length=128)
@@ -19,3 +22,6 @@ class Product(TimeStampedModel):
 
     class Meta:
         db_table = 'product'
+
+    def __str__(self):
+        return self.name
