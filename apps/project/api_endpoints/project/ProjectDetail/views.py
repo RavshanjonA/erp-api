@@ -1,9 +1,16 @@
-from rest_framework.generics import RetrieveAPIView
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.generics import  RetrieveUpdateDestroyAPIView
+from rest_framework.permissions import IsAuthenticated
 
-from apps.project.api_endpoints.project.ProjectDetail.serializers import ProjectDetailSerializer
+from .serializers import ProjectDetailSerializer
 from apps.project.models import Project
 
 
-class ProjectDetailView(RetrieveAPIView):
+class ProjectDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectDetailSerializer
+    permission_classes = [IsAuthenticated, ]
+    authentication_classes = [TokenAuthentication, ]
+
+
+__all__ = ['ProjectDetailView',]

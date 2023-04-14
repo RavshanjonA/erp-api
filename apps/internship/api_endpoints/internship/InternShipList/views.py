@@ -7,3 +7,5 @@ from apps.internship.models import Internship
 class InternshipListView(ListAPIView):
     queryset = Internship.objects.all()
     serializer_class = InternshipListSerializer
+
+__all__ = ['InternshipListView']

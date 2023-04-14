@@ -9,4 +9,4 @@ class InvertoryListView(ListAPIView):
     serializer_class = InventoryListSerializer
 
 
-__all__ = [InvertoryListView,]
+__all__ = ['InvertoryListView', ]

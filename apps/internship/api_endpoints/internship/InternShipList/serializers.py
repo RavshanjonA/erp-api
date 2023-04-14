@@ -6,5 +6,5 @@ from apps.internship.models import Internship
 class InternshipListSerializer(ModelSerializer):
     class Meta:
         model = Internship
-        fields = ('name', 'description', 'finished')
+        fields = ('name', 'description', 'finished_at')
 

@@ -13,7 +13,7 @@ class ProjectStatusChoice(TextChoices):
 class Project(TimeStampedModel):
     name = CharField(max_length=128)
     decription = TextField()
-    employess = ManyToManyField('employee.Employee', 'employees', null=True, blank=True)
+    employess = ManyToManyField('employee.Employee', 'employees')
     status = CharField(max_length=128, choices=ProjectStatusChoice.choices,default=ProjectStatusChoice.WAITING)
     deadline = DateTimeField()
 

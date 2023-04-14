@@ -1,9 +1,15 @@
-from rest_framework.generics import RetrieveAPIView
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.generics import  RetrieveUpdateDestroyAPIView
+from rest_framework.permissions import  IsAuthenticatedOrReadOnly
 
-from apps.internship.api_endpoints.internship.InternshipDetail.serializers import InternshipDetailSerializer
+from .serializers import InternshipDetailSerializer
 from apps.internship.models import Internship
 
 
-class InternshipDetailView(RetrieveAPIView):
+class InternshipDetailView(RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAuthenticatedOrReadOnly, ]
+    authentication_classes = [TokenAuthentication, ]
     queryset = Internship.objects.all()
     serializer_class = InternshipDetailSerializer
+
+__all__ = ['InternshipDetailView']

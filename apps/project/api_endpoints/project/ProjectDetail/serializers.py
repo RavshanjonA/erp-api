@@ -7,4 +7,4 @@ from apps.project.models import Project
 class ProjectDetailSerializer(ModelSerializer):
     class Meta:
         model= Project
-        fields = ('name', 'decription', 'employess', 'is_finished', 'deadline')
+        fields = ('name', 'decription', 'employess', 'status', 'deadline')
