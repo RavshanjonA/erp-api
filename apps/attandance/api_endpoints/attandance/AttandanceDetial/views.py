@@ -9,9 +9,11 @@ from apps.attandance.models import Attandance
 from apps.employee.models import Employee
 
 
-class AttandanceDetail(APIView):
+class AttandanceDetailView(APIView):
     def get(self,request, pk):
         employee  = get_object_or_404(Employee, pk = pk)
         attandance = Attandance.objects.filter(employee=employee)
         serializer = AttandanceDetailSerailizer(attandance, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
+
+__all__ = ['AttandanceDetailView']

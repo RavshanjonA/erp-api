@@ -7,4 +7,3 @@ class Attandance(Model):
 
     class Meta:
         db_table = 'attandance'
-

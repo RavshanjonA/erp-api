@@ -10,7 +10,10 @@ class EmployeeDetialView(RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticatedOrReadOnly, ]
     authentication_classes = [TokenAuthentication, ]
     serializer_class = EmployeeDetailSerializer
+
     queryset = Employee.objects.all()
+
+
 
 
 __all__ = ['EmployeeDetialView', ]
