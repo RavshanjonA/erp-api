@@ -10,7 +10,7 @@ class Inventory(TimeStampedModel):
 
     class Meta:
         db_table = 'invetory'
-
+        verbose_name_plural = 'Inventories'
     def __str__(self):
         return self.name
 

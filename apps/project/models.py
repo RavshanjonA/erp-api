@@ -17,5 +17,8 @@ class Project(TimeStampedModel):
     status = CharField(max_length=128, choices=ProjectStatusChoice.choices,default=ProjectStatusChoice.WAITING)
     deadline = DateTimeField()
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table='project'

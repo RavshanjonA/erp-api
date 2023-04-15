@@ -1,6 +1,5 @@
 from django.db import models
-from django.db.models import Model, TextField, DateTimeField
-from rest_framework.fields import CharField
+from django.db.models import Model, TextField, DateTimeField,CharField
 
 from apps.common.models import TimeStampedModel
 

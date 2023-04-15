@@ -9,4 +9,4 @@ class Attandance(Model):
         db_table = 'attandance'
 
     def __str__(self):
-        self.employee.first_name
+        return str(self.start_work.strftime("%H:%M:%S"))
