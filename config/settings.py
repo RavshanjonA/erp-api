@@ -23,7 +23,6 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-
 CUSTOM_APPS = [
     "apps.attandance.apps.AttandanceConfig",
     "apps.common.apps.CommonConfig",
@@ -38,10 +37,10 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'drf_yasg',
+    'jazzmin',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
